@@ -1,0 +1,9 @@
+(match | init) | (sigma ; gen) {11,12} 
+
+where init  = replace x             by [0,x]          if true
+      match = replace [i,x], [j,y] by [i,x], [j+1, y] if x <= y and i == j
+      gen1  = replace n            by n-1, n-2        if n > 1
+      gen2  = replace n            by 1               if n == 0
+      gen   = gen1 | gen2
+      sigma = replace x,y          by x+y             if true
+

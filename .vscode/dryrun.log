@@ -1,0 +1,25 @@
+make all --dry-run --keep-going --print-directory
+make: Entering directory '/home/gabriel/ProjetosGit/Gamma/Gamma_Par'
+mkdir -p debug release
+ 
+make: *** No rule to make target 'release/grammar.y', needed by 'release/gm'.
+make: *** No rule to make target 'release/scan.l', needed by 'release/gm'.
+make: *** No rule to make target 'release/main.o', needed by 'release/gm'.
+ 
+make: *** No rule to make target 'release/parser.o', needed by 'release/gm'.
+ 
+make: *** No rule to make target 'release/misc.o', needed by 'release/gm'.
+ 
+make: *** No rule to make target 'release/print.o', needed by 'release/gm'.
+ 
+make: *** No rule to make target 'release/check.o', needed by 'release/gm'.
+make: *** No rule to make target 'release/vars.o', needed by 'release/gm'.
+ 
+make: *** No rule to make target 'release/code.o', needed by 'release/gm'.
+ 
+make: *** No rule to make target 'release/printcode.o', needed by 'release/gm'.
+ 
+make: *** No rule to make target 'release/pattern.o', needed by 'release/gm'.
+ 
+make: Leaving directory '/home/gabriel/ProjetosGit/Gamma/Gamma_Par'
+ 

@@ -35,6 +35,8 @@
 *.i*86
 *.x86_64
 *.hex
+
+# project Executables
 run
 gm
 
@@ -52,3 +54,4 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
