@@ -1,0 +1,4 @@
+p1 | p2 | p3 {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}
+where p1 = replace 1 by 2 if true
+      p2 = replace 1 by 3 if true
+      p3 = replace 1 by 4 if true

@@ -1,0 +1,1 @@
+factorial { 1,2,3,4,5 } where factorial  = replace x,y by x*y if true

@@ -1,0 +1,4 @@
+gen ; sigma {5} where  gen1  = replace n by n-1, n-2 if n > 1
+			 gen2  = replace n by 1        if n == 0
+			 gen   = gen1 | gen2
+			 sigma = replace x,y by x+y   if true
