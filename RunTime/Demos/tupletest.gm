@@ -1,3 +1,0 @@
-P { [1,2] }
-where
-P = replace [x,y] by [y,x] if true

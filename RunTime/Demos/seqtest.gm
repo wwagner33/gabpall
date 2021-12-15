@@ -1,6 +1,0 @@
-prog {1,1,1,1,1,1,1,1,1,1} 
-where
-p1 = replace 1 by 2 if true
-p2 = replace 2 by 3 if true
-prog = p1 ; p2
-

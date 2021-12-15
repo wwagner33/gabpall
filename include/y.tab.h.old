@@ -43,3 +43,8 @@ extern YYSTYPE yylval;
 # define TK_WHERE 284
 # define TK_OBRACE 285
 # define TK_CBRACE 286
+
+int yyparse(void);
+int yylex(void);
+int yyerrok(char *);
+

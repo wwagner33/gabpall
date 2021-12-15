@@ -1,5 +1,0 @@
-../gm < $1 > run.c
-make
-chmod ugo+x exe
-exe
-

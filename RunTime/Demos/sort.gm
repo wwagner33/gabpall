@@ -1,8 +1,0 @@
-init ; match {1, 3,55,39,2,4,4,4,5,11} 
-
-where init = replace x             by [0,x]           if true
-      match = replace [i,x], [j,y] by [i,x], [j+1, y] if x <= y and i == j
-
-
-
-

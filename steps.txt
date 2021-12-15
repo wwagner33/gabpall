@@ -1,4 +1,3 @@
-
 ## o que precisa para compilar?
 
 1) OPENMPI:
@@ -41,4 +40,3 @@ cc -g   -c -o printcode.o printcode.c
 cc -g   -c -o pattern.o pattern.c
 mpicc -g grammar.o scan.o main.o parser.o misc.o print.o check.o vars.o code.o printcode.o pattern.o  -o gm
 rm scan.c
-

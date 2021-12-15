@@ -1,3 +1,0 @@
-P { [1,[2,3]] }
-where
-P = replace [x,[y,z]] by [[x,y],z] if true

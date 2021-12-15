@@ -1,6 +1,0 @@
-tag ; split ; untag { 10 }
-where
-tag = replace n by [n,true] if true
-split = replace [n,true] by [n,false],[n-1,true] if n > 1
-untag = replace [n,false] by n if true 
-
