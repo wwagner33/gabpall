@@ -1,0 +1,5 @@
+(p1 | p2 );p3 {[2,1],[5,1],[5,2],[6,2]}
+where
+	p1 = replace [x,1],[y,1] by  [x,1] if x>=y
+	p2 = replace [x,2],[y,2] by  [x,2] if x>=y
+	p3 = replace [z,1],[u,2] by z+u if true

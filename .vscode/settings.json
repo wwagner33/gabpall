@@ -1,0 +1,20 @@
+{
+    "workbench.colorTheme": "Default High Contrast",
+    "security.workspace.trust.untrustedFiles": "open",
+    "C_Cpp.autocompleteAddParentheses": true,
+    "makefile.buildLog": "",
+    "makefile.configurations": [
+        
+        {
+            "name": "Default",
+            "makeArgs": []
+        },
+        {
+            "name": "Print make version",
+            "makeArgs": ["--version"]
+        }
+    ],
+    "files.associations": {
+        "rtbag.h": "c"
+    }
+}

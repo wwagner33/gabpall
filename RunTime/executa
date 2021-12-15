@@ -1,0 +1,1 @@
+mpirun -np 3 -machinefile machines.sun4 run
