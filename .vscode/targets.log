@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+ 
 # GNU Make 4.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2014 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Oct  5 16:16:51 2021
+# Make data base, printed on Wed Dec 15 16:16:58 2021
 
 # Variables
 
@@ -14,17 +16,15 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 GNUMAKEFLAGS := 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
-# makefile (from 'Makefile', line 36)
-RELEXE = $(RELDIR)/$(EXE)
 # automatic
 ?F = $(notdir $?)
 # environment
 DESKTOP_SESSION = ubuntu
 # default
 .SHELLFLAGS := -c
-# makefile (from 'Makefile', line 19)
-OBJ = grammar.o scan.o main.o parser.o misc.o print.o check.o vars.o code.o printcode.o pattern.o
-# makefile (from 'Makefile', line 17)
+# makefile (from 'Makefile', line 15)
+OBJ = grammar.o scan.o main.o parser.o misc.o print.o check.o vars.o code.o printcode.o pattern.o 
+# makefile (from 'Makefile', line 13)
 SRC = grammar.y scan.l main.c parser.c misc.c print.c check.c vars.c code.c printcode.c pattern.c 
 # environment
 XDG_SESSION_TYPE = x11
@@ -47,40 +47,29 @@ SHELL = /bin/sh
 # environment
 VTE_VERSION = 5202
 # environment
-VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"d75d2bbbca3e8a7d1f4edc999d2b2911.pt-br","_translationsConfigFile":"/home/gabriel/.config/Code/clp/d75d2bbbca3e8a7d1f4edc999d2b2911.pt-br/tcf.json","_cacheRoot":"/home/gabriel/.config/Code/clp/d75d2bbbca3e8a7d1f4edc999d2b2911.pt-br","_resolvedLanguagePackCoreLocation":"/home/gabriel/.config/Code/clp/d75d2bbbca3e8a7d1f4edc999d2b2911.pt-br/7f6ab5485bbc008386c4386d08766667e155244e","_corruptedFile":"/home/gabriel/.config/Code/clp/d75d2bbbca3e8a7d1f4edc999d2b2911.pt-br/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"d75d2bbbca3e8a7d1f4edc999d2b2911.pt-br","_translationsConfigFile":"/home/gabriel/.config/Code/clp/d75d2bbbca3e8a7d1f4edc999d2b2911.pt-br/tcf.json","_cacheRoot":"/home/gabriel/.config/Code/clp/d75d2bbbca3e8a7d1f4edc999d2b2911.pt-br","_resolvedLanguagePackCoreLocation":"/home/gabriel/.config/Code/clp/d75d2bbbca3e8a7d1f4edc999d2b2911.pt-br/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e","_corruptedFile":"/home/gabriel/.config/Code/clp/d75d2bbbca3e8a7d1f4edc999d2b2911.pt-br/corrupted.info","_languagePackSupport":true}
 # environment
 _ = /usr/bin/code
-# environment
-JOURNAL_STREAM = 9:43754
- 
+# makefile (from 'Makefile', line 6)
+CFLAGS = -g
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
-# makefile (from 'Makefile', line 35)
-RELDIR = release
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # automatic
 @F = $(notdir $@)
 # environment
 IM_CONFIG_PHASE = 2
-# makefile (from 'Makefile', line 13)
-MPI = mpicc
 # environment
 USERNAME = gabriel
 # environment
 MAKELEVEL := 0
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
-# makefile (from 'Makefile', line 30)
-DBGCFLAGS = -g -O0 -DDEBUG
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=aa2564819aff9cf88385f428615c61ef
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
-# makefile (from 'Makefile', line 20)
-OBJS = $(SRC:.c=.o)
-# environment
-MANAGERPID = 2681
 # environment
 CLUTTER_IM_MODULE = xim
 # environment
@@ -92,13 +81,11 @@ VSCODE_CWD = /home/gabriel/ProjetosGit/Gamma/Gamma_Par
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-# makefile (from 'Makefile', line 38)
-RELCFLAGS = -g -O3 -DNDEBUG
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/bin:/home/gabriel/opt/openmpi/bin
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/E2020004280:@/tmp/.ICE-unix/2741,unix/E2020004280:/tmp/.ICE-unix/2741
+SESSION_MANAGER = local/E2020004280:@/tmp/.ICE-unix/2789,unix/E2020004280:/tmp/.ICE-unix/2789
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -111,8 +98,6 @@ VSCODE_LOG_STACK = false
 DESKTOP_MODE = 1
 # environment
 VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=faf51c03-bee3-45de-8a04-132051373aca&iid=faf51c03-bee3-45de-8a04-132051373aca&sid=faf51c03-bee3-45de-8a04-132051373aca","uploadToServer":true}
-# environment
-INVOCATION_ID = d2e863fc20b84203a73a935282c57e56
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -129,14 +114,12 @@ DISPLAY = :0
 GTK_IM_MODULE = ibus
 # environment
 VSCODE_PIPE_LOGGING = true
-# makefile (from 'Makefile', line 28)
-DBGEXE = $(DBGDIR)/$(EXE)
 # environment
 PWD = /home/gabriel/ProjetosGit/Gamma/Gamma_Par
 # environment
 XDG_SEAT = seat0
 # environment
-SSH_AGENT_PID = 2836
+SSH_AGENT_PID = 2899
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -145,14 +128,14 @@ GTK_MODULES = gail:atk-bridge
 VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
 # environment
 HOME = /home/gabriel
-# makefile (from 'Makefile', line 29)
-DBGOBJS = $(addprefix $(DBGDIR)/, $(OBJS))
+# environment
+LD_LIBRARY_PATH = :/usr/local/lib:/home/gabriel/opt/openmpi/lib
 # environment
 LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /home/gabriel/.config/Code/CachedData/7f6ab5485bbc008386c4386d08766667e155244e
+VSCODE_CODE_CACHE_PATH = /home/gabriel/.config/Code/CachedData/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e
 # environment
 LOGNAME = gabriel
 # environment
@@ -161,8 +144,6 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 +F = $(notdir $+)
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
-# makefile (from 'Makefile', line 37)
-RELOBJS = $(addprefix $(RELDIR)/, $(OBJS))
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -188,7 +169,9 @@ SHLVL = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-070af0f3-afdb-474e-b734-08302e789215.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e1ce0eb8-fe76-40b1-8e8b-d9a37a29799e.sock
+# makefile (from 'Makefile', line 4)
+YFLAGS = -d
 # environment
 XDG_SESSION_ID = 2
 # environment
@@ -196,16 +179,18 @@ USER = gabriel
 # environment
 LC_MONETARY = pt_BR.UTF-8
 # makefile
-.DEFAULT_GOAL := all
+.DEFAULT_GOAL := gm
 # environment
 XDG_CURRENT_DESKTOP = Unity
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
 LC_TELEPHONE = pt_BR.UTF-8
+# makefile (from 'Makefile', line 8)
+LFLAGS = 
 # default
 MAKE_COMMAND := make
-# makefile (from 'Makefile', line 15)
+# makefile (from 'Makefile', line 10)
 INC = include/const.h include/types.h include/fnc.h include/rtbag.h
 # environment
 OLDPWD = /home/gabriel/ProjetosGit/Gamma/Gamma_Par/RunTime
@@ -214,7 +199,7 @@ OLDPWD = /home/gabriel/ProjetosGit/Gamma/Gamma_Par/RunTime
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-06d0a0c8-1.60.2-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-06d0a0c8-1.63.0-main.sock
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -230,11 +215,9 @@ GDK_BACKEND = x11
 # environment
 LC_PAPER = pt_BR.UTF-8
 # environment
-NO_AT_BRIDGE = 1
+LC_IDENTIFICATION = pt_BR.UTF-8
 # environment
 QT_ACCESSIBILITY = 1
-# environment
-DESKTOP_AUTOSTART_ID = 101d8c19a6fe2ebeca16334443387080900000027410007
 # environment
 TEXTDOMAINDIR = /usr/share/locale/
 # default
@@ -250,16 +233,15 @@ LC_MEASUREMENT = pt_BR.UTF-8
 # environment
 LC_ALL = C
 # environment
-DBUS_STARTER_BUS_TYPE = session
-# environment
 QT4_IM_MODULE = xim
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/c733ca47_51f1_45ae_afa5_ff88179afa0e
- 
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/cfed7137_3fb3_4a90_a614_30c2fd0c5406
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.267
+GNOME_TERMINAL_SERVICE = :1.77
 # default
 SUFFIXES := 
 # environment
@@ -269,11 +251,9 @@ WINDOWPATH = 2
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
 # environment
-LC_IDENTIFICATION = pt_BR.UTF-8
+GJS_DEBUG_OUTPUT = stderr
 # default
 .RECIPEPREFIX := 
-# makefile (from 'Makefile', line 11)
-EXE = gm
 # environment
 LC_ADDRESS = pt_BR.UTF-8
 # environment
@@ -281,13 +261,9 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 5672
-# environment
-DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=aa2564819aff9cf88385f428615c61ef
-# makefile (from 'Makefile', line 27)
-DBGDIR = debug
+VSCODE_PID = 9638
 # variable set hash-table stats:
-# Load=137/1024=13%, Rehash=0, Collisions=33/198=17%
+# Load=125/1024=12%, Rehash=0, Collisions=25/163=15%
 
 # Pattern-specific Variable Values
 
@@ -295,25 +271,16 @@ DBGDIR = debug
 
 # Directories
 
-# . (device 2051, inode 7606528): 24 files, no impossibilities.
+# . (device 2051, inode 7606528): 28 files, no impossibilities.
 
-# 24 files, no impossibilities in 1 directories.
+# 28 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
-debug/%.o: %.c
-#  recipe to execute (from 'Makefile', line 54):
-	$(MPICC) -c $(DBGCFLAGS) -o $@ $<
-
-# 1 implicit rules, 0 (0.0%) terminal.
+ 
+# No implicit rules.
 
 # Files
-
-# Not a target:
-debug/main.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
 
 printcode.o: include/const.h include/types.h include/fnc.h include/rtbag.h
 #  Implicit rule search has not been done.
@@ -321,114 +288,41 @@ printcode.o: include/const.h include/types.h include/fnc.h include/rtbag.h
 #  File has not been updated.
 
 # Not a target:
-release/vars.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-parser.o: include/const.h include/types.h include/fnc.h include/rtbag.h
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-release/scan.l:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-pattern.o: include/const.h include/types.h include/fnc.h include/rtbag.h
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-all: prep release
-#  Phony target (prerequisite of .PHONY).
+all:
 #  Command line target.
-#  Implicit rule search has not been done.
+#  Implicit rule search has been done.
 #  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+#  File has not been updated.
 
-# Not a target:
-release/parser.o:
+gm: grammar.o scan.o main.o parser.o misc.o print.o check.o vars.o code.o printcode.o pattern.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+#  recipe to execute (from 'Makefile', line 18):
+	mpicc $(CFLAGS) $(OBJ) -o gm
 
-.PHONY: all clean prep debug release
+scan.o: include/const.h include/types.h include/fnc.h include/rtbag.h include/y.tab.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-
-# Not a target:
-release/main.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-debug/gm: debug/grammar.y debug/scan.l debug/main.o debug/parser.o debug/misc.o debug/print.o debug/check.o debug/vars.o debug/code.o debug/printcode.o debug/pattern.o
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 51):
-	$(MPICC) $(DBGCFLAGS) -o $(DBGEXE) $^
-
-scan.o: y.tab.h
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-release/pattern.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-prep:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := prep
-# automatic
-# % := 
-# automatic
-# * := 
-# automatic
-# + := 
-# automatic
-# | := 
-# automatic
-# < := 
-# automatic
-# ^ := 
-# automatic
-# ? := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/13=8%
-#  recipe to execute (from 'Makefile', line 93):
-	mkdir -p $(DBGDIR) $(RELDIR)
 
 copy.o: include/const.h include/types.h include/fnc.h include/rtbag.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
- 
 # Not a target:
 include/vars.h:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-.SUFFIXES:
+misc.c: include/const.h include/types.h include/fnc.h include/rtbag.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+print.o: include/const.h include/types.h include/fnc.h include/rtbag.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -436,21 +330,9 @@ include/vars.h:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-10-05 16:16:47.604388918
+#  Last modified 2021-12-15 16:16:07.219585512
 #  File has been updated.
 #  Successfully updated.
-
-# Not a target:
-debug/printcode.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-debug: debug/gm
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
 
 code.c: include/const.h include/types.h include/fnc.h include/rtbag.h
 #  Implicit rule search has not been done.
@@ -458,42 +340,18 @@ code.c: include/const.h include/types.h include/fnc.h include/rtbag.h
 #  File has not been updated.
 
 # Not a target:
-include/vars.hcreate_:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-grammar.y: include/const.h include/types.h include/fnc.h include/rtbag.h include/vars.hcreate_
+grammar.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
-debug/grammar.y:
+misc.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
-release/gm: release/grammar.y release/scan.l release/main.o release/parser.o release/misc.o release/print.o release/check.o release/vars.o release/code.o release/printcode.o release/pattern.o
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 67):
-	$(MPICC) $(RELCFLAGS) $(OBJ) -o $(RELEXE) $^ 
-
-# Not a target:
-debug/check.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-debug/print.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-main.o: include/const.h include/types.h include/fnc.h include/rtbag.h include/vars.h
+grammar.y: include/const.h include/types.h include/fnc.h include/rtbag.h include/vars.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -504,29 +362,9 @@ include/rtbag.h:
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-debug/misc.o:
+parser.o: include/const.h include/types.h include/fnc.h include/rtbag.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-debug/code.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
- 
-
-# Not a target:
-release/printcode.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-release: release/gm
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
 #  File has not been updated.
 
 # Not a target:
@@ -546,48 +384,23 @@ vars.o: include/const.h include/types.h include/fnc.h include/rtbag.h
 #  Modification time never checked.
 #  File has not been updated.
 
-misc.c: include/const.h include/types.h include/fnc.h include/rtbag.h
+# Not a target:
+include/y.tab.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pattern.o: include/const.h include/types.h include/fnc.h include/rtbag.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 clean:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 96):
-	rm -f $(EXE) $(DBGEXE) *.o
-
-# Not a target:
-release/grammar.y:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-
-# Not a target:
-release/check.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-debug/vars.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-debug/scan.l:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-release/print.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 45):
+	rm -f y.output *.o
 
 # Not a target:
 include/const.h:
@@ -595,20 +408,7 @@ include/const.h:
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-release/misc.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-release/code.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-debug/parser.o:
+main.o: include/const.h include/types.h include/fnc.h include/rtbag.h include/vars.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -619,38 +419,31 @@ check.o: include/const.h include/types.h include/fnc.h include/rtbag.h
 #  File has not been updated.
 
 # Not a target:
-y.tab.h:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-debug/pattern.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
 include/types.h:
- 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+code.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=51/1024=5%, Rehash=0, Collisions=5/143=3%
+# Load=27/1024=3%, Rehash=0, Collisions=1/107=1%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 72 / storage = 793 B / avg = 11 B
-# current buf: size = 8162 B / used = 793 B / count = 72 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 53 / storage = 481 B / avg = 9 B
+# current buf: size = 8162 B / used = 481 B / count = 53 / avg = 9 B
 
-# strcache performance: lookups = 148 / hit rate = 51%
+# strcache performance: lookups = 127 / hit rate = 58%
 # hash-table stats:
-# Load=72/8192=1%, Rehash=0, Collisions=1/148=1%
-# Finished Make data base on Tue Oct  5 16:16:51 2021
+# Load=53/8192=1%, Rehash=0, Collisions=1/127=1%
+# Finished Make data base on Wed Dec 15 16:16:58 2021
 
  
