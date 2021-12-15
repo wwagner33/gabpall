@@ -8,7 +8,7 @@
  *      Author: Simon Gay and Juarez Muylaert                   *
  *                                                              *
  ****************************************************************
- */
+ ****/
 
 # include <stdio.h>
 # include <stdlib.h>
