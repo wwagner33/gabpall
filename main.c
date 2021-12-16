@@ -31,7 +31,7 @@ int main(void)
 		exit (1);
 
 	printf ("\nNow the Syntax Tree\n\n");
-	PrintProgram (Program);
+	//PrintProgram (Program);
 
 
 	if (check_names_in_program(Program) == FALSE)
@@ -47,7 +47,7 @@ int main(void)
 	if (CheckPatternsInDefinitions (Program->p_defs))
 	    exit (1);
 	TranslateProgramPatterns (Program);
-	/*PrintProgram (Program);  */
+	PrintProgram (Program);  
 
 	WriteHeader ();
 	CodeInitialBag (Program->p_bag);

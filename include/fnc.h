@@ -80,3 +80,15 @@ void GenTuple ();
 void GenCodeExpression ();
 void GenCodeReaction ();
 void GenCodeBagIntSearch ();
+
+void PrintProgram ();
+int check_names_in_program();
+int check_multiple_defs();
+int check_names_in_program();
+int CheckPatternsInDefinitions ();
+int CheckNamesInProgram();
+void TranslateProgramPatterns();
+void GenScript();
+int GenMainCode();
+int IsElement();
+
